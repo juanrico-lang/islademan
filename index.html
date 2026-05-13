@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MotoRide 🔥</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="sidebar">
+
+        <h1>🏍 MotoRide</h1>
+
+        <ul>
+            <li> Inicio</li>
+            <li> Tendencias</li>
+            <li> Deportivas</li>
+            <li> Touring</li>
+            <li> Adventure</li>
+            <li> Favoritas</li>
+        </ul>
+
+    </div>
+
+    <div class="main">
+
+        <div class="banner">
+
+            <div class="overlay">
+
+                <h2>Siente la velocidad</h2>
+
+                <p>Explora las motos más brutales del 2026</p>
+
+                <button>Explorar</button>
+
+            </div>
+
+        </div>
+
+        <div class="formulario">
+
+            <h2>🏍 Personaliza tu experiencia</h2>
+
+            <div class="campos">
+
+                <select id="uso">
+
+                    <option value="">¿Para qué usarás la moto?</option>
+                    <option value="ciudad">Ciudad</option>
+                    <option value="viajes">Viajes</option>
+                    <option value="velocidad">Velocidad</option>
+                    <option value="trabajo">Trabajo</option>
+                    <option value="adventure">Adventure</option>
+
+                </select>
+
+                <select id="cilindraje">
+
+                    <option value="">Cilindraje favorito</option>
+                    <option value="150">150cc</option>
+                    <option value="200">200cc</option>
+                    <option value="400">400cc</option>
+                    <option value="600">600cc+</option>
+
+                </select>
+
+                <select id="marca">
+
+                    <option value="">Marca favorita</option>
+                    <option value="yamaha">Yamaha</option>
+                    <option value="ktm">KTM</option>
+                    <option value="honda">Honda</option>
+                    <option value="kawasaki">Kawasaki</option>
+                    <option value="ducati">Ducati</option>
+
+                </select>
+
+                <button onclick="recomendarMoto()">
+                    Buscar recomendación
+                </button>
+
+            </div>
+
+        </div>
+
+        <div id="resultado"></div>
+
+        <h3 class="titulo">🔥 Motos Populares</h3>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img src="Imagenes_mt/mt095.jpg">
+
+                <h4>Yamaha MT-09</h4>
+
+                <p>890cc • Hyper Naked</p>
+
+                <audio class="audioMoto">
+
+                    <source src="audio/mt09.m4a" type="audio/mp4">
+
+                </audio>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Imagenes_mt/r31.jpg">
+
+                <h4>Yamaha R3</h4>
+
+                <p>321cc • Deportiva</p>
+
+                <audio class="audioMoto">
+
+                    <source src="audio/r31.mp3.m4a" type="audio/mp3">
+
+                </audio>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Imagenes_mt/duke1.jpg">
+
+                <h4>KTM Duke 200</h4>
+
+                <p>200cc • Street</p>
+
+                <audio class="audioMoto">
+
+                    <source src="audio/duke1.m4a" type="audio/mp4">
+
+                </audio>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Imagenes_mt/ns1.jpg">
+
+                <h4>Pulsar NS200</h4>
+
+                <p>200cc • Urbana</p>
+
+                <audio class="audioMoto">
+
+                    <source src="audio/ns.m4a" type="audio/mp4">
+
+                </audio>
+
+            </div>
+
+        </div>
+
+        <h3 class="titulo"> Recomendadas</h3>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img src="Imagenes_mt/smr1.jpg">
+
+                <h4>BMW S1000RR</h4>
+
+                <p>999cc • Superbike</p>
+
+                <audio class="audioMoto">
+
+                    <source src="audio/s1000.mp3.m4a" type="audio/mp3">
+
+                </audio>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Imagenes_mt/duca1.jpg">
+
+                <h4>Ducati Panigale</h4>
+
+                <p>1103cc • Racing</p>
+
+                <audio class="audioMoto">
+
+                    <source src="audio/ducati.m4a" type="audio/mp4">
+
+                </audio>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Imagenes_mt/ninja1.jpg">
+
+                <h4>Kawasaki Ninja</h4>
+
+                <p>636cc • Ninja Series</p>
+
+                <audio class="audioMoto">
+
+                    <source src="audio/ninja.m4a" type="audio/mp4">
+
+                </audio>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Imagenes_mt/mt091.jpg">
+
+                <h4>Honda CB650R</h4>
+
+                <p>650cc • Neo Sports</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="scrip.js"></script>
+
+</body>
+</html>
